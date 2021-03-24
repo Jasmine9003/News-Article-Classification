@@ -1,0 +1,54 @@
+<html>
+		 <!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <title>News Category Predictor</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</head> 
+
+
+<body background="Cinnamint.jpg">
+	<div class="container" style="background:transparent url('Cinnamint.jpg');margin-top: 50px;border-style: solid">
+		<div class="panel panel-default" style="margin-right: -1pc;
+		margin-left: -15.5px;margin-bottom: auto"> 
+				<div class="panel-heading"><h1 style="text-align: center">News Category Predictor</h1></div>
+				<div class="panel-body">
+		<form action="/submit" method="post">
+				<div class="form-group">
+				  <label for="url_id" class="control-label"><h4>Enter the URL here</h4></label>
+				  <input type="url" class="form-control" id="url_id"  name="url_name" placeholder="name@domain.com">
+				</div>
+				<div class="form-group"> <!-- Submit button !-->
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+
+				<!-- <div class="form-group"> 
+						<textarea id = "url_text" rows="4" cols="50" placeholder="{{text}}">
+								
+								</textarea>
+					</div> -->
+
+
+					<div class="form-group">
+							<label for="Textarea1"><h4>Enter News content here</h4></label>
+							<textarea class="form-control" id="Textarea1" rows="3" placeholder="{{text}}"></textarea>
+						  </div>
+
+
+					<div class="form-group"> <!-- Email field !-->
+						<label for="label_id" class="control-label"><h4>Predicted news category</h4></label>
+						<input type="email" class="form-control" id="label_id" name="label_name" value= {{ label }}>
+					</div>
+				
+				</form>
+</div>
+
+</div>
+
+
+</body>
+</html>
